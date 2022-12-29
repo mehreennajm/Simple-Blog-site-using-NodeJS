@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:true}));
 
 mongoose.set('strictQuery', true);
 //connect to MonogDB database
-const dbURI = "mongodb+srv://nodeninja:test1234@cluster0.chjtufy.mongodb.net/node-tuts";
+const dbURI = "mongodb+srv://yourlink";
 mongoose.connect(dbURI)
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
